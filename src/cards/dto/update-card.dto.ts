@@ -1,6 +1,11 @@
 import { IsEnum, IsNotEmpty } from "class-validator";
 import { User } from "src/auth/schemas/auth.schema";
-import { Status } from "src/auth/status.type";
+
+export enum Status {
+  ToDo = 'TO-DO',
+  InProgress = 'IN-PROGRESS',
+  Done = 'DONE',
+}
 
 export class UpdateCardDto {
   @IsNotEmpty()

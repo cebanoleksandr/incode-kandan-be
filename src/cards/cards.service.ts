@@ -5,7 +5,12 @@ import { UpdateCardDto } from './dto/update-card.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { Card, CardDocument } from './schemas/card.schema';
 import { Model } from 'mongoose';
-import { Status } from 'src/auth/status.type';
+
+export enum Status {
+  ToDo = 'TO-DO',
+  InProgress = 'IN-PROGRESS',
+  Done = 'DONE',
+}
 
 @Injectable()
 export class CardsService {

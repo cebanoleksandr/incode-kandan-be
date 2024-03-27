@@ -1,7 +1,12 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Document } from "mongoose";
 import { User } from "src/auth/schemas/auth.schema";
-import { Status } from "src/auth/status.type";
+
+export enum Status {
+  ToDo = 'TO-DO',
+  InProgress = 'IN-PROGRESS',
+  Done = 'DONE',
+}
 
 export type CardDocument = Card & Document
 
