@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Document } from "mongoose";
 import { User } from "src/auth/schemas/auth.schema";
-import { Status } from "src/auth/types";
+import { Status } from "src/auth/status.type";
 
 export type CardDocument = Card & Document
 

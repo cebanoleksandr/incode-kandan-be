@@ -5,7 +5,7 @@ import { UpdateCardDto } from './dto/update-card.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { Card, CardDocument } from './schemas/card.schema';
 import { Model } from 'mongoose';
-import { Status } from 'src/auth/types';
+import { Status } from 'src/auth/status.type';
 
 @Injectable()
 export class CardsService {
