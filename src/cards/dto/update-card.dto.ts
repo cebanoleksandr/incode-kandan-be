@@ -1,6 +1,6 @@
-import { IsEnum, IsNotEmpty, IsOptional } from "class-validator";
-import { Status } from "src/utils/types";
-import { User } from "src/utils/user";
+import { IsEnum, IsNotEmpty } from "class-validator";
+import { User } from "src/auth/schemas/auth.schema";
+import { Status } from "src/types";
 
 export class UpdateCardDto {
   @IsNotEmpty()

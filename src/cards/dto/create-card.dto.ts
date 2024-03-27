@@ -1,5 +1,5 @@
 import { IsNotEmpty } from "class-validator";
-import { User } from "src/utils/user";
+import { User } from "src/auth/schemas/auth.schema";
 
 export class CreateCardDto {
   @IsNotEmpty()
