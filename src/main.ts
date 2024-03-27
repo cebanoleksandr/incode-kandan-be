@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 
-export async function bootstrap() {
+async function bootstrap() {
   try {
     const app = await NestFactory.create(AppModule);
     app.enableCors();
@@ -12,4 +12,5 @@ export async function bootstrap() {
     console.log(error);    
   }
 }
-bootstrap();
+// bootstrap();
+export default bootstrap;
