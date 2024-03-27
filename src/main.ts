@@ -12,5 +12,5 @@ async function bootstrap() {
     console.log(error);    
   }
 }
-// bootstrap();
+bootstrap();
 export default bootstrap;
